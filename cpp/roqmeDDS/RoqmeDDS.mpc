@@ -1,0 +1,36 @@
+project(*roqme) : splice4roqme{
+//  macros = TESTING
+  sharedname   = roqmedds
+  libout       = ./lib
+  includes += ./idl
+  includes += ./include
+  
+  IDL_Files{
+    ./idl/RoqmeDDSTopics.idl
+  }
+  Header_Files{
+    ./include/RoqmeDDSManager.h
+    ./include/RoqmeDataWriter.h
+    ./include/RoqmeDataReader.h
+    ./include/ContextListener.h
+    ./include/RoqmeDDSListener.h
+    ./include/RoqmeDDSException.h
+    ./include/RoqmeDataWriterWrapper.h
+    ./include/RoqmeDataReaderWrapper.h
+    ./include/RoqmeWriterImpl.h
+    ./include/RoqmeReaderImpl.h
+    ./include/RoqmeDebug.h
+    ./include/RoqmePlayer.h
+  }
+  Source_Files { 
+    ./src/RoqmeDDSManager.cpp
+    ./src/RoqmeDataWriter.cpp
+    ./src/RoqmeDataReader.cpp
+    ./src/RoqmeTemplateImpl.cpp
+    ./src/RoqmeDDSException.cpp
+    ./src/RoqmeWriterImpl.cpp
+    ./src/RoqmeReaderImpl.cpp
+    ./src/RoqmeDebug.cpp
+    ./src/RoqmePlayer.cpp
+  }
+}

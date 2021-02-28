@@ -1,3 +1,8 @@
+[RoQME-DDS]
+===============================
+
+RoQME-DDS implements the RoQME Data Space used in the RoQME Project (https://github.com/roqme).
+
 **Installation**
 
 1. Download OpenSliceDDS Community Edition from: https://github.com/ADLINK-IST/opensplice/releases. We recommend the 6.7.180404OSS for x86_64.linux release (installer version).
